@@ -4,6 +4,7 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 
 import { useAuthContext } from '@/app/providers';
 import { useMediaQuery } from '@/shared/lib/useMediaQuery';
+import { Logo } from '@/shared/ui';
 
 import s from './AppShell.module.css';
 
@@ -58,7 +59,7 @@ export const AppShell = ({ children }: Props) => {
           {!isRoot && (
             <button className={s.backBtn} onClick={() => navigate(-1)}>←</button>
           )}
-          <img src="/logo.svg" alt="BOXR" style={{ height: 22 }} />
+          <Logo height={22} />
           <span className={s.logo}>BOXR</span>
         </div>
         <div className={s.headerRight}>

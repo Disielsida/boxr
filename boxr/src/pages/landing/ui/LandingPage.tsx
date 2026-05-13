@@ -1,7 +1,7 @@
 import { useEffect, useRef, useState } from 'react';
 import { useNavigate } from 'react-router-dom';
 
-import { Button, Hairline, MonoLabel, Pill } from '@/shared/ui';
+import { Button, Hairline, Logo, MonoLabel, Pill } from '@/shared/ui';
 
 import s from './LandingPage.module.css';
 
@@ -115,7 +115,7 @@ export const LandingPage = () => {
         }}
       >
         <div className={s.navBrand} onClick={() => navigate('/')}>
-          <img src={scrolled ? '/black-logo.svg' : '/logo.svg'} alt="BOXR" style={{ height: 27 }} />
+          <Logo height={27} color={scrolled ? '#1a143d' : '#F0F4F9'} />
           <div
             style={{
               fontFamily: 'var(--font-display)',
