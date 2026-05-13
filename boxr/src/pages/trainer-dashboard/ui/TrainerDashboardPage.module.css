@@ -54,6 +54,13 @@
   border-color: var(--ink-900);
 }
 
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 24px;
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -85,6 +92,12 @@
 
   .tabs::-webkit-scrollbar {
     display: none;
+  }
+
+  .sectionHeader {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 12px;
   }
 
   .grid {

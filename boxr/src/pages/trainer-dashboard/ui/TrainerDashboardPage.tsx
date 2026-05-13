@@ -115,7 +115,7 @@ export const TrainerDashboardPage = () => {
           {/* ── Боксёры ── */}
           {tab === 'boxers' && (
             <>
-              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', marginBottom: 24 }}>
+              <div className={s.sectionHeader}>
                 <h2 style={{ fontFamily: 'var(--font-display)', fontSize: 'clamp(24px, 2.5vw, 32px)', fontWeight: 600, letterSpacing: '-0.02em' }}>
                   Мои боксёры
                 </h2>
