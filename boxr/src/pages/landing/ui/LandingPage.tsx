@@ -201,7 +201,7 @@ export const LandingPage = () => {
             >
               Турниры по боксу
               <br />
-              <em style={{ fontStyle: 'italic', fontWeight: 300, letterSpacing: "0.1rem" }}>
+              <em style={{ fontStyle: 'italic', fontWeight: 300, letterSpacing: "0.1rem", display: 'block', marginTop: 10 }}>
                 {'Без хаоса'.split('').map((char, i) => (
                   <span
                     key={i}
@@ -239,11 +239,11 @@ export const LandingPage = () => {
                 transitionDelay: '0.45s',
               }}
             >
-              <button onClick={() => navigate('/login')} className={s.btnPrimary}>
-                Войти в систему
-              </button>
               <button onClick={() => navigate('/tournaments')} className={s.btnGhost}>
                 Посмотреть турниры
+              </button>
+              <button onClick={() => navigate('/login')} className={s.btnPrimary}>
+                Войти в систему
               </button>
             </div>
           </div>
