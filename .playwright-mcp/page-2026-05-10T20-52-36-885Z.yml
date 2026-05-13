@@ -1,0 +1,7 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - heading "Доступ запрещён" [level=1] [ref=e4]
+    - button "← НАЗАД" [ref=e5] [cursor=pointer]
+  - button "AI-помощник" [ref=e6] [cursor=pointer]:
+    - img [ref=e7]
+    - text: AI-помощник

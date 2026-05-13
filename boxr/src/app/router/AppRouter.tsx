@@ -12,6 +12,7 @@ import { PublicTournamentPage } from '@/pages/public-tournament';
 import { PublicTournamentsPage } from '@/pages/public-tournaments';
 import { RegisterBoxerPage } from '@/pages/register-boxer';
 import { TournamentManagePage } from '@/pages/tournament-manage';
+import { AdminDashboardPage } from '@/pages/admin-dashboard';
 import { JudgeDashboardPage } from '@/pages/judge-dashboard';
 import { TrainerDashboardPage } from '@/pages/trainer-dashboard';
 import { PrintBracketPage } from '@/pages/print-bracket';
@@ -97,6 +98,14 @@ export const AppRouter = () => {
           element={
             <RequireRole role="judge">
               <AppShell><JudgeDashboardPage /></AppShell>
+            </RequireRole>
+          }
+        />
+        <Route
+          path="/admin"
+          element={
+            <RequireRole role="admin">
+              <AppShell><AdminDashboardPage /></AppShell>
             </RequireRole>
           }
         />

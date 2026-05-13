@@ -32,4 +32,27 @@ export class UsersService {
       orderBy: { fullName: 'asc' },
     });
   }
+
+  listAll(search?: string): Promise<{ id: string; fullName: string; email: string; role: Role; createdAt: Date }[]> {
+    return this.prisma.user.findMany({
+      where: search
+        ? {
+            OR: [
+              { fullName: { contains: search, mode: 'insensitive' } },
+              { email: { contains: search, mode: 'insensitive' } },
+            ],
+          }
+        : undefined,
+      select: { id: true, fullName: true, email: true, role: true, createdAt: true },
+      orderBy: { createdAt: 'desc' },
+    });
+  }
+
+  async updateRole(id: string, role: Role): Promise<void> {
+    await this.prisma.user.update({ where: { id }, data: { role } });
+  }
+
+  async deleteUser(id: string): Promise<void> {
+    await this.prisma.user.delete({ where: { id } });
+  }
 }

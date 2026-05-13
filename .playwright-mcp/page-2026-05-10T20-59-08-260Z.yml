@@ -1,0 +1,81 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: SMOKE PER-ROUND
+      - generic [ref=e10]: БОЙ 1 · РАУНД 3
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: ● КРАСНЫЙ УГОЛ
+        - heading "Виктор Платонов" [level=2] [ref=e14]
+        - generic [ref=e15]: — · THIRD_CLASS
+        - generic [ref=e16]: "10"
+      - generic [ref=e17]:
+        - generic [ref=e18]: 00:00
+        - generic [ref=e19]: РАУНД 3 / 3
+      - generic [ref=e20]:
+        - generic [ref=e21]: СИНИЙ УГОЛ ●
+        - heading "Денис Куликов" [level=2] [ref=e22]
+        - generic [ref=e23]: — · SECOND_CLASS
+        - generic [ref=e24]: "9"
+    - generic [ref=e25]:
+      - generic [ref=e26]:
+        - generic [ref=e27]:
+          - button "Замечание 🔴 КР" [disabled] [ref=e28]:
+            - generic [ref=e29]: Замечание
+            - generic [ref=e30]: 🔴 КР
+          - button "Замечание 🔵 СИ" [disabled] [ref=e31]:
+            - generic [ref=e32]: Замечание
+            - generic [ref=e33]: 🔵 СИ
+        - generic [ref=e34]:
+          - button "Предупреждение 🔴 КР" [disabled] [ref=e35]:
+            - generic [ref=e36]: Предупреждение
+            - generic [ref=e37]: 🔴 КР
+          - button "Предупреждение 🔵 СИ" [disabled] [ref=e38]:
+            - generic [ref=e39]: Предупреждение
+            - generic [ref=e40]: 🔵 СИ
+        - generic [ref=e41]:
+          - button "Нокдаун 🔴 КР" [disabled] [ref=e42]:
+            - generic [ref=e43]: Нокдаун
+            - generic [ref=e44]: 🔴 КР
+          - button "Нокдаун 🔵 СИ" [disabled] [ref=e45]:
+            - generic [ref=e46]: Нокдаун
+            - generic [ref=e47]: 🔵 СИ
+        - generic [ref=e48]:
+          - button "Стоп бой 🔴 КР" [disabled] [ref=e49]:
+            - generic [ref=e50]: Стоп бой
+            - generic [ref=e51]: 🔴 КР
+          - button "Стоп бой 🔵 СИ" [disabled] [ref=e52]:
+            - generic [ref=e53]: Стоп бой
+            - generic [ref=e54]: 🔵 СИ
+      - generic [ref=e55]:
+        - generic [ref=e56]:
+          - generic [ref=e57]: Р1 00:05
+          - generic [ref=e58]: Предупреждение — 🔴
+        - generic [ref=e59]:
+          - generic [ref=e60]: Р2 00:30
+          - generic [ref=e61]: Нокдаун — 🔵
+    - generic [ref=e63]:
+      - generic [ref=e64]:
+        - generic [ref=e65]: ОЦЕНКА РАУНДА
+        - generic [ref=e66]: Раунд 3
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]: ● КРАСНЫЙ
+          - generic [ref=e70]: Виктор Платонов
+          - generic [ref=e71]:
+            - button "10" [ref=e72] [cursor=pointer]
+            - button "9" [ref=e73] [cursor=pointer]
+            - button "8" [ref=e74] [cursor=pointer]
+            - button "7" [ref=e75] [cursor=pointer]
+        - generic [ref=e76]:
+          - generic [ref=e77]: ● СИНИЙ
+          - generic [ref=e78]: Денис Куликов
+          - generic [ref=e79]:
+            - button "10" [ref=e80] [cursor=pointer]
+            - button "9" [ref=e81] [cursor=pointer]
+            - button "8" [ref=e82] [cursor=pointer]
+            - button "7" [ref=e83] [cursor=pointer]
+      - button "ПОДТВЕРДИТЬ ОЦЕНКУ РАУНДА 3" [ref=e84] [cursor=pointer]
+  - button "AI-помощник" [ref=e85] [cursor=pointer]:
+    - img [ref=e86]
+    - text: AI-помощник

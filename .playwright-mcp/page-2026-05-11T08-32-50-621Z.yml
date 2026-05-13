@@ -1,0 +1,53 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - button "← К дашборду" [ref=e5] [cursor=pointer]
+    - generic [ref=e7]:
+      - generic [ref=e8]: Региональный · Любители
+      - heading "Тест Расписание" [level=1] [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]: 1–2 июнь 2026 · Москва
+        - generic [ref=e12]: Идёт
+    - generic [ref=e13]:
+      - button "Информация" [ref=e14] [cursor=pointer]
+      - button "Участники" [ref=e15] [cursor=pointer]
+      - button "Жеребьёвка" [ref=e16] [cursor=pointer]
+      - button "Расписание" [ref=e17] [cursor=pointer]
+      - button "Результаты" [ref=e18] [cursor=pointer]
+    - generic [ref=e146]:
+      - generic [ref=e149]:
+        - button "Перерасставить" [ref=e150] [cursor=pointer]
+        - button "Очистить расписание" [ref=e151] [cursor=pointer]
+      - generic [ref=e152]:
+        - button "1 июня" [ref=e154] [cursor=pointer]
+        - generic [ref=e155]:
+          - generic [ref=e156] [cursor=pointer]:
+            - generic [ref=e157]: 10:00
+            - generic [ref=e158]: Бой 1
+            - generic [ref=e159]: Ринг 1
+            - generic [ref=e160]: Боксёр Тест 3
+            - generic [ref=e161]: vs
+            - generic [ref=e162]: Боксёр Тест 1
+            - generic [ref=e163]: 67 кг
+            - link "LIVE" [ref=e164]:
+              - /url: /scoring/60b650eb-6821-469e-82cc-1dcf7ddc62a5
+          - generic [ref=e165] [cursor=pointer]:
+            - generic [ref=e166]: 10:00
+            - generic [ref=e167]: Бой 2
+            - generic [ref=e168]: Ринг 2
+            - generic [ref=e169]: Боксёр Тест 2
+            - generic [ref=e170]: vs
+            - generic [ref=e171]: Боксёр Тест 4
+            - generic [ref=e172]: 67 кг
+            - link "LIVE" [ref=e173]:
+              - /url: /scoring/6659b19f-22e4-45ab-8ec7-6ef86f0b3dc8
+          - generic [ref=e174] [cursor=pointer]:
+            - generic [ref=e175]: 11:30
+            - generic [ref=e176]: Бой 3
+            - generic [ref=e177]: Ринг 1
+            - emphasis [ref=e179]: —
+            - generic [ref=e180]: vs
+            - emphasis [ref=e182]: —
+            - generic [ref=e183]: 67 кг
+  - button "AI-помощник" [ref=e42] [cursor=pointer]:
+    - img [ref=e43]
+    - text: AI-помощник

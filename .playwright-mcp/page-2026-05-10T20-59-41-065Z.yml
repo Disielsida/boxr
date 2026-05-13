@@ -1,0 +1,59 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: SMOKE PER-ROUND
+      - generic [ref=e10]: БОЙ 1 · РАУНД 3
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: ● КРАСНЫЙ УГОЛ
+        - heading "Виктор Платонов" [level=2] [ref=e14]
+        - generic [ref=e15]: — · THIRD_CLASS
+        - generic [ref=e16]: "10"
+      - generic [ref=e17]:
+        - generic [ref=e18]: 00:00
+        - generic [ref=e93]: БОЙ ОКОНЧЕН
+        - generic [ref=e19]: РАУНД 3 / 3
+      - generic [ref=e20]:
+        - generic [ref=e21]: СИНИЙ УГОЛ ●
+        - heading "Денис Куликов" [level=2] [ref=e22]
+        - generic [ref=e23]: — · SECOND_CLASS
+        - generic [ref=e24]: "9"
+    - generic [ref=e94]:
+      - generic [ref=e95]:
+        - generic [ref=e96]:
+          - generic [ref=e97]: ИСХОД
+          - combobox "ИСХОД" [ref=e98]:
+            - option "WP — по очкам" [selected]
+            - option "KO — нокаут"
+            - option "RSC — рефери остановил"
+            - option "DSQ — дисквалификация"
+            - option "WO — неявка / отказ"
+        - generic [ref=e99]:
+          - button "🔴 Виктор Платонов" [ref=e100] [cursor=pointer]
+          - button "🔵 Денис Куликов" [ref=e101] [cursor=pointer]
+      - generic [ref=e102]:
+        - generic [ref=e103]: ПРОТОКОЛ РАУНДОВ
+        - generic [ref=e104]:
+          - generic [ref=e105]: Раунд 1
+          - generic [ref=e106]: "9"
+          - generic [ref=e107]: ":"
+          - generic [ref=e108]: "10"
+        - generic [ref=e109]:
+          - generic [ref=e110]: Раунд 2
+          - generic [ref=e111]: "10"
+          - generic [ref=e112]: ":"
+          - generic [ref=e113]: "9"
+        - generic [ref=e114]:
+          - generic [ref=e115]: Раунд 3
+          - generic [ref=e116]: "10"
+          - generic [ref=e117]: ":"
+          - generic [ref=e118]: "9"
+        - generic [ref=e119]:
+          - generic [ref=e120]: ИТОГО
+          - generic [ref=e121]: "29"
+          - generic [ref=e122]: ":"
+          - generic [ref=e123]: "28"
+      - button "УТВЕРДИТЬ РЕЗУЛЬТАТ" [ref=e125] [cursor=pointer]
+  - button "AI-помощник" [ref=e85] [cursor=pointer]:
+    - img [ref=e86]
+    - text: AI-помощник

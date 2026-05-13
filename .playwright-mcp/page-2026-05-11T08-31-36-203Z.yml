@@ -1,0 +1,21 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - button "← К дашборду" [ref=e5] [cursor=pointer]
+    - generic [ref=e7]:
+      - generic [ref=e8]: Региональный · Любители
+      - heading "Тест Расписание" [level=1] [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]: 1–2 июнь 2026 · Москва
+        - generic [ref=e12]: Регистрация
+    - generic [ref=e13]:
+      - button "Информация" [ref=e14] [cursor=pointer]
+      - button "Участники" [ref=e15] [cursor=pointer]
+      - button "Жеребьёвка" [active] [ref=e16] [cursor=pointer]
+      - button "Расписание" [ref=e17] [cursor=pointer]
+      - button "Результаты" [ref=e18] [cursor=pointer]
+    - generic [ref=e111]:
+      - paragraph [ref=e112]: Сетка ещё не сгенерирована. Сетка строится из одобренных заявок.
+      - button "Сгенерировать сетку" [ref=e113] [cursor=pointer]
+  - button "AI-помощник" [ref=e42] [cursor=pointer]:
+    - img [ref=e43]
+    - text: AI-помощник

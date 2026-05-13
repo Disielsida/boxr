@@ -1,4 +1,4 @@
-export type UserRole = 'organizer' | 'trainer' | 'judge';
+export type UserRole = 'organizer' | 'trainer' | 'judge' | 'admin';
 
 export type TournamentType = 'regional' | 'national' | 'international';
 export type TournamentLevel = 'amateur' | 'professional' | 'mixed';

@@ -1,0 +1,5 @@
+- generic [ref=e2]:
+  - heading "Турнир не найден" [level=1] [ref=e4]
+  - button "AI-помощник" [ref=e5] [cursor=pointer]:
+    - img [ref=e6]
+    - text: AI-помощник

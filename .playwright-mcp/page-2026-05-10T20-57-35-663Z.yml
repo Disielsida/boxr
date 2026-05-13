@@ -1,0 +1,58 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: SMOKE PER-ROUND
+      - generic [ref=e10]: БОЙ 1 · РАУНД 1
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: ● КРАСНЫЙ УГОЛ
+        - heading "Виктор Платонов" [level=2] [ref=e14]
+        - generic [ref=e15]: — · THIRD_CLASS
+        - generic [ref=e16]: "10"
+      - generic [ref=e17]:
+        - generic [ref=e18]: 00:35
+        - generic [ref=e19]:
+          - generic [ref=e20]: ПЕРЕРЫВ
+          - button "СЛЕД. РАУНД" [ref=e21] [cursor=pointer]
+        - generic [ref=e22]: РАУНД 1 / 3
+      - generic [ref=e23]:
+        - generic [ref=e24]: СИНИЙ УГОЛ ●
+        - heading "Денис Куликов" [level=2] [ref=e25]
+        - generic [ref=e26]: — · SECOND_CLASS
+        - generic [ref=e27]: "10"
+    - generic [ref=e28]:
+      - generic [ref=e29]:
+        - generic [ref=e30]:
+          - button "Замечание 🔴 КР" [ref=e31] [cursor=pointer]:
+            - generic [ref=e32]: Замечание
+            - generic [ref=e33]: 🔴 КР
+          - button "Замечание 🔵 СИ" [ref=e34] [cursor=pointer]:
+            - generic [ref=e35]: Замечание
+            - generic [ref=e36]: 🔵 СИ
+        - generic [ref=e37]:
+          - button "Предупреждение 🔴 КР" [ref=e38] [cursor=pointer]:
+            - generic [ref=e39]: Предупреждение
+            - generic [ref=e40]: 🔴 КР
+          - button "Предупреждение 🔵 СИ" [ref=e41] [cursor=pointer]:
+            - generic [ref=e42]: Предупреждение
+            - generic [ref=e43]: 🔵 СИ
+        - generic [ref=e44]:
+          - button "Нокдаун 🔴 КР" [ref=e45] [cursor=pointer]:
+            - generic [ref=e46]: Нокдаун
+            - generic [ref=e47]: 🔴 КР
+          - button "Нокдаун 🔵 СИ" [ref=e48] [cursor=pointer]:
+            - generic [ref=e49]: Нокдаун
+            - generic [ref=e50]: 🔵 СИ
+        - generic [ref=e51]:
+          - button "Стоп бой 🔴 КР" [ref=e52] [cursor=pointer]:
+            - generic [ref=e53]: Стоп бой
+            - generic [ref=e54]: 🔴 КР
+          - button "Стоп бой 🔵 СИ" [ref=e55] [cursor=pointer]:
+            - generic [ref=e56]: Стоп бой
+            - generic [ref=e57]: 🔵 СИ
+      - generic [ref=e59]:
+        - generic [ref=e60]: Р1 00:05
+        - generic [ref=e61]: Предупреждение — 🔴
+  - button "AI-помощник" [ref=e62] [cursor=pointer]:
+    - img [ref=e63]
+    - text: AI-помощник

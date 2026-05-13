@@ -220,4 +220,9 @@ export const tournamentsApi = {
   async remove(id: string): Promise<void> {
     await request<void>(`/tournaments/${id}`, { method: 'DELETE' });
   },
+
+  async listAll(): Promise<Tournament[]> {
+    const raw = await request<RawTournament[]>('/tournaments/admin/all');
+    return raw.map(mapTournament);
+  },
 };

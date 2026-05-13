@@ -1,0 +1,72 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - button "← К дашборду" [ref=e5] [cursor=pointer]
+    - generic [ref=e7]:
+      - generic [ref=e8]: Региональный · Любители
+      - heading "Тест Расписание" [level=1] [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]: 1–2 июнь 2026 · Москва
+        - generic [ref=e12]: Регистрация
+    - generic [ref=e13]:
+      - button "Информация" [ref=e14] [cursor=pointer]
+      - button "Участники" [ref=e15] [cursor=pointer]
+      - button "Жеребьёвка" [ref=e16] [cursor=pointer]
+      - button "Расписание" [ref=e17] [cursor=pointer]
+      - button "Результаты" [ref=e18] [cursor=pointer]
+    - generic [ref=e51]:
+      - generic [ref=e52]:
+        - button "Все" [ref=e53] [cursor=pointer]
+        - button "На проверке" [ref=e54] [cursor=pointer]
+        - button "Одобрены" [ref=e55] [cursor=pointer]
+        - button "Отклонены" [ref=e56] [cursor=pointer]
+        - button "Отозваны" [ref=e57] [cursor=pointer]
+      - generic [ref=e58]:
+        - generic [ref=e59]:
+          - generic [ref=e60]: № 1
+          - generic [ref=e61]:
+            - generic [ref=e62]: —
+            - generic [ref=e63]: —
+          - generic [ref=e64]: —
+          - generic [ref=e65]: —
+          - generic [ref=e66]: 67 кг
+          - generic [ref=e107]: —
+          - generic [ref=e68]: Одобрена
+        - generic [ref=e71]:
+          - generic [ref=e72]: № 2
+          - generic [ref=e73]:
+            - generic [ref=e74]: Боксёр Тест 2
+            - generic [ref=e75]: —
+          - generic [ref=e76]: NaN лет
+          - generic [ref=e77]: 67 кг
+          - generic [ref=e78]: 67 кг
+          - generic [ref=e79]:
+            - generic [ref=e80]: На проверке
+            - button "Одобрить" [ref=e81] [cursor=pointer]
+            - button "Отклонить" [ref=e82] [cursor=pointer]
+        - generic [ref=e83]:
+          - generic [ref=e84]: № 3
+          - generic [ref=e85]:
+            - generic [ref=e86]: Боксёр Тест 3
+            - generic [ref=e87]: —
+          - generic [ref=e88]: NaN лет
+          - generic [ref=e89]: 67 кг
+          - generic [ref=e90]: 67 кг
+          - generic [ref=e91]:
+            - generic [ref=e92]: На проверке
+            - button "Одобрить" [ref=e93] [cursor=pointer]
+            - button "Отклонить" [ref=e94] [cursor=pointer]
+        - generic [ref=e95]:
+          - generic [ref=e96]: № 4
+          - generic [ref=e97]:
+            - generic [ref=e98]: Боксёр Тест 4
+            - generic [ref=e99]: —
+          - generic [ref=e100]: NaN лет
+          - generic [ref=e101]: 67 кг
+          - generic [ref=e102]: 67 кг
+          - generic [ref=e103]:
+            - generic [ref=e104]: На проверке
+            - button "Одобрить" [ref=e105] [cursor=pointer]
+            - button "Отклонить" [ref=e106] [cursor=pointer]
+  - button "AI-помощник" [ref=e42] [cursor=pointer]:
+    - img [ref=e43]
+    - text: AI-помощник

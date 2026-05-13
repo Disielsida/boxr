@@ -20,12 +20,14 @@ const ROLE_TO_API: Record<UserRole, string> = {
   organizer: 'ORGANIZER',
   trainer: 'TRAINER',
   judge: 'JUDGE',
+  admin: 'ADMIN',
 };
 
 const ROLE_FROM_API: Record<string, UserRole> = {
   ORGANIZER: 'organizer',
   TRAINER: 'trainer',
   JUDGE: 'judge',
+  ADMIN: 'admin',
 };
 
 interface RawUser {

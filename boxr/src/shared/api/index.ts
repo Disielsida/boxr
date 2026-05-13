@@ -22,4 +22,4 @@ export {
 } from './applications';
 export { matchesApi, type SetResultInput } from './matches';
 export { aiApi, type ChatMessage } from './ai';
-export { usersApi } from './users';
+export { usersApi, type AdminUser } from './users';

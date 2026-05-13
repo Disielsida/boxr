@@ -17,7 +17,11 @@ export const RedirectIfAuth = ({ children }: { children: ReactNode }) => {
   const { user, initializing } = useAuthContext();
   if (initializing) return null;
   if (user) {
-    const dest = user.role === 'trainer' ? '/trainer' : user.role === 'judge' ? '/judge' : '/dashboard';
+    const dest =
+      user.role === 'trainer' ? '/trainer' :
+      user.role === 'judge' ? '/judge' :
+      user.role === 'admin' ? '/admin' :
+      '/dashboard';
     return <Navigate to={dest} replace />;
   }
   return <>{children}</>;

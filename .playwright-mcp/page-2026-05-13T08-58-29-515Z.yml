@@ -1,0 +1,63 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - button "← Все турниры" [ref=e4] [cursor=pointer]
+    - generic [ref=e5]: Региональный · Любители
+    - heading "Открытый турнир ЦФО по боксу" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]: 12–14 май 2026 · Воронеж · Дворец спорта «Юбилейный»
+      - generic [ref=e9]: Идёт
+    - generic [ref=e10]:
+      - button "Сетка" [ref=e11] [cursor=pointer]
+      - button "Расписание" [ref=e12] [cursor=pointer]
+      - button "Результаты" [ref=e13] [cursor=pointer]
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]:
+          - button "←" [disabled] [ref=e18]
+          - generic [ref=e19]:
+            - generic [ref=e20]: 57 кг
+            - generic [ref=e21]: 1 / 7
+          - button "→" [ref=e22] [cursor=pointer]
+        - generic [ref=e23]:
+          - button "57 кг" [ref=e24] [cursor=pointer]
+          - button "60 кг" [ref=e25] [cursor=pointer]
+          - button "63.5 кг" [ref=e26] [cursor=pointer]
+          - button "67 кг" [ref=e27] [cursor=pointer]
+          - button "71 кг" [ref=e28] [cursor=pointer]
+          - button "75 кг" [ref=e29] [cursor=pointer]
+          - button "80 кг" [ref=e30] [cursor=pointer]
+      - generic [ref=e31]:
+        - generic [ref=e32]:
+          - generic [ref=e34]: 57 кг
+          - generic [ref=e35]: 2 матчей в 1-м раунде
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: 1/2
+            - button "🔴 Власов Игорь Дмитриевич 🔵 Зуева Марина Олеговна" [disabled] [ref=e40]:
+              - generic [ref=e41]:
+                - generic [ref=e42]: 🔴
+                - generic [ref=e43]: Власов Игорь Дмитриевич
+              - generic [ref=e44]:
+                - generic [ref=e45]: 🔵
+                - generic [ref=e46]: Зуева Марина Олеговна
+            - button "🔴 Петров Василий Иванович 🔵 BYE WO" [disabled] [ref=e48]:
+              - generic [ref=e49]:
+                - generic [ref=e50]: 🔴
+                - generic [ref=e51]: Петров Василий Иванович
+              - generic [ref=e52]:
+                - generic [ref=e53]: 🔵
+                - emphasis [ref=e55]: BYE
+              - generic [ref=e56]: WO
+          - generic [ref=e57]:
+            - generic [ref=e58]: Финал
+            - button "🔴 Петров Василий Иванович 🔵 BYE WO" [disabled] [ref=e60]:
+              - generic [ref=e61]:
+                - generic [ref=e62]: 🔴
+                - generic [ref=e63]: Петров Василий Иванович
+              - generic [ref=e64]:
+                - generic [ref=e65]: 🔵
+                - emphasis [ref=e67]: BYE
+              - generic [ref=e68]: WO
+  - button "AI-помощник" [ref=e69] [cursor=pointer]:
+    - img [ref=e70]
+    - text: AI-помощник

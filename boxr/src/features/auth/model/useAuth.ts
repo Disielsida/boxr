@@ -20,6 +20,7 @@ const ROLE_HOME: Record<UserRole, string> = {
   organizer: '/dashboard',
   trainer: '/trainer',
   judge: '/judge',
+  admin: '/admin',
 };
 
 export const useAuth = () => {

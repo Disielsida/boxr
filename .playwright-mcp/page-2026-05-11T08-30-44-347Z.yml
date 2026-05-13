@@ -1,0 +1,26 @@
+- generic [ref=e2]:
+  - generic [ref=e57]:
+    - banner [ref=e58]:
+      - generic [ref=e59]:
+        - generic [ref=e60]: ДАШБОРД
+        - heading "Здравствуйте, Тест Организатор." [level=1] [ref=e61]
+        - paragraph [ref=e62]: "Роль: Организатор · smoke_org@boxr.test"
+      - button "Выйти" [ref=e63] [cursor=pointer]
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - heading "Мои турниры" [level=2] [ref=e66]
+        - button "Создать турнир" [ref=e67] [cursor=pointer]:
+          - img [ref=e68]
+          - text: Создать турнир
+      - button "Региональный Регистрация Тест Расписание 1–2 июнь 2026 · Москва 1 КАТЕГОРИЙ 3 × 3 МИН" [ref=e71] [cursor=pointer]:
+        - generic [ref=e72]:
+          - generic [ref=e73]: Региональный
+          - generic [ref=e74]: Регистрация
+        - heading "Тест Расписание" [level=3] [ref=e75]
+        - generic [ref=e76]: 1–2 июнь 2026 · Москва
+        - generic [ref=e77]:
+          - generic [ref=e78]: 1 КАТЕГОРИЙ
+          - generic [ref=e79]: 3 × 3 МИН
+  - button "AI-помощник" [ref=e48] [cursor=pointer]:
+    - img [ref=e49]
+    - text: AI-помощник

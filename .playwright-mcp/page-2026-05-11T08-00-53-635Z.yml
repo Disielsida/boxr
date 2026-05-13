@@ -1,0 +1,34 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - generic [ref=e5]: SMOKE PER-ROUND
+      - generic [ref=e10]: БОЙ 1 · РАУНД 3
+    - generic [ref=e11]:
+      - generic [ref=e12]:
+        - generic [ref=e13]: ● КРАСНЫЙ УГОЛ
+        - heading "Виктор Платонов" [level=2] [ref=e14]
+        - generic [ref=e15]: — · THIRD_CLASS
+        - generic [ref=e16]: "10"
+      - generic [ref=e17]:
+        - generic [ref=e18]: 00:00
+        - generic [ref=e19]: БОЙ ОКОНЧЕН
+        - generic [ref=e20]: РАУНД 3 / 3
+      - generic [ref=e21]:
+        - generic [ref=e22]: СИНИЙ УГОЛ ●
+        - heading "Денис Куликов" [level=2] [ref=e23]
+        - generic [ref=e24]: — · SECOND_CLASS
+        - generic [ref=e25]: "9"
+    - generic [ref=e26]:
+      - generic [ref=e27]:
+        - generic [ref=e66]: ✓
+        - generic [ref=e67]: РЕЗУЛЬТАТ ЗАФИКСИРОВАН
+      - generic [ref=e34]:
+        - generic [ref=e35]: 🔴 Виктор Платонов
+        - generic [ref=e68]: WP — по очкам
+        - generic [ref=e51]: "Итого очков: 29 : 28"
+      - generic [ref=e69]:
+        - button "ИЗМЕНИТЬ РЕЗУЛЬТАТ (09:50)" [ref=e72] [cursor=pointer]
+        - button "К ДАШБОРДУ →" [ref=e71] [cursor=pointer]
+  - button "AI-помощник" [ref=e58] [cursor=pointer]:
+    - img [ref=e59]
+    - text: AI-помощник

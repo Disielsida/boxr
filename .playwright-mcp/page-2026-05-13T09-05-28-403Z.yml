@@ -1,0 +1,18 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - button "← Все турниры" [ref=e4] [cursor=pointer]
+    - generic [ref=e5]: Всероссийский · Любители
+    - heading "Мемориал Валерия Попенченко" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]: 10–13 июль 2026 · Москва · Дворец спорта «Динамо»
+      - generic [ref=e9]: Регистрация
+    - link "Войти для подачи заявки →" [ref=e11] [cursor=pointer]:
+      - /url: /login
+    - generic [ref=e12]:
+      - button "Сетка" [ref=e13] [cursor=pointer]
+      - button "Расписание" [ref=e14] [cursor=pointer]
+      - button "Результаты" [ref=e15] [cursor=pointer]
+    - generic [ref=e17]: Сетка будет опубликована после жеребьёвки.
+  - button "AI-помощник" [ref=e18] [cursor=pointer]:
+    - img [ref=e19]
+    - text: AI-помощник

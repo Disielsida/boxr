@@ -1,0 +1,52 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - button "← Все турниры" [ref=e4] [cursor=pointer]
+    - generic [ref=e5]: Региональный · Любители
+    - heading "Открытый турнир ЦФО по боксу" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]: 12–14 май 2026 · Воронеж · Дворец спорта «Юбилейный»
+      - generic [ref=e9]: Идёт
+    - generic [ref=e10]:
+      - button "Сетка" [ref=e11] [cursor=pointer]
+      - button "Расписание" [active] [ref=e12] [cursor=pointer]
+      - button "Результаты" [ref=e13] [cursor=pointer]
+    - generic [ref=e77]:
+      - generic [ref=e78]:
+        - button "12 мая" [ref=e79] [cursor=pointer]
+        - button "13 мая" [ref=e80] [cursor=pointer]
+      - generic [ref=e81]:
+        - generic [ref=e82]:
+          - generic [ref=e83]: 10:30
+          - generic [ref=e84]: Бой 1
+          - generic [ref=e85]: Ринг 2
+          - generic [ref=e86]: Поляков Денис Михайлович
+          - generic [ref=e87]: vs
+          - generic [ref=e88]: Корнилов Евгений Николаевич
+          - generic [ref=e89]: 71 кг
+        - generic [ref=e90]:
+          - generic [ref=e91]: 11:30
+          - generic [ref=e92]: Бой 2
+          - generic [ref=e93]: Ринг 2
+          - generic [ref=e94]: Власов Игорь Дмитриевич
+          - generic [ref=e95]: vs
+          - generic [ref=e96]: Зуева Марина Олеговна
+          - generic [ref=e97]: 57 кг
+        - generic [ref=e98]:
+          - generic [ref=e99]: 12:00
+          - generic [ref=e100]: Бой 3
+          - generic [ref=e101]: Ринг 2
+          - generic [ref=e102]: Максим Громов
+          - generic [ref=e103]: vs
+          - generic [ref=e104]: Сергей Козлов
+          - generic [ref=e105]: 67 кг
+        - generic [ref=e106]:
+          - generic [ref=e107]: 13:00
+          - generic [ref=e108]: Бой 4
+          - generic [ref=e109]: Ринг 2
+          - generic [ref=e110]: Лукьянова Валерия Игоревна
+          - generic [ref=e111]: vs
+          - generic [ref=e112]: Макиров Павел
+          - generic [ref=e113]: 60 кг
+  - button "AI-помощник" [ref=e69] [cursor=pointer]:
+    - img [ref=e70]
+    - text: AI-помощник

@@ -1,0 +1,3 @@
+- button "AI-помощник" [ref=e3] [cursor=pointer]:
+  - img [ref=e4]
+  - text: AI-помощник

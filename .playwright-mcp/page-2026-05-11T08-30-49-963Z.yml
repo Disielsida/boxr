@@ -1,0 +1,41 @@
+- generic [ref=e2]:
+  - generic [ref=e4]:
+    - button "← К дашборду" [ref=e5] [cursor=pointer]
+    - generic [ref=e7]:
+      - generic [ref=e8]: Региональный · Любители
+      - heading "Тест Расписание" [level=1] [ref=e9]
+      - generic [ref=e10]:
+        - generic [ref=e11]: 1–2 июнь 2026 · Москва
+        - generic [ref=e12]: Регистрация
+    - generic [ref=e13]:
+      - button "Информация" [ref=e14] [cursor=pointer]
+      - button "Участники" [ref=e15] [cursor=pointer]
+      - button "Жеребьёвка" [ref=e16] [cursor=pointer]
+      - button "Расписание" [ref=e17] [cursor=pointer]
+      - button "Результаты" [ref=e18] [cursor=pointer]
+    - generic [ref=e19]:
+      - generic [ref=e20]:
+        - generic [ref=e21]:
+          - generic [ref=e22]: Категории
+          - generic [ref=e23]: "1"
+        - generic [ref=e24]:
+          - generic [ref=e25]: Раунды
+          - generic [ref=e26]: 3 × 3 мин
+        - generic [ref=e27]:
+          - generic [ref=e28]: Шлемы
+          - generic [ref=e29]: Нет
+        - generic [ref=e30]:
+          - generic [ref=e31]: Статус
+          - generic [ref=e32]: published
+        - generic [ref=e33]:
+          - generic [ref=e34]: Опубликован
+          - generic [ref=e35]: 11.05.2026
+        - generic [ref=e36]:
+          - generic [ref=e37]: Веса
+          - generic [ref=e38]: 67кг
+      - generic [ref=e39]:
+        - button "Редактировать" [ref=e40] [cursor=pointer]
+        - button "Отменить турнир" [ref=e41] [cursor=pointer]
+  - button "AI-помощник" [ref=e42] [cursor=pointer]:
+    - img [ref=e43]
+    - text: AI-помощник

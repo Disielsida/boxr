@@ -1,0 +1,37 @@
+- generic [ref=e2]:
+  - generic [ref=e57]:
+    - banner [ref=e58]:
+      - generic [ref=e59]:
+        - generic [ref=e60]: ДАШБОРД
+        - heading "Здравствуйте, Test AI." [level=1] [ref=e61]
+        - paragraph [ref=e62]: "Роль: Организатор · testai99@boxr.test"
+      - button "Выйти" [ref=e63] [cursor=pointer]
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - heading "Мои турниры" [level=2] [ref=e66]
+        - button "Создать турнир" [ref=e67] [cursor=pointer]:
+          - img [ref=e68]
+          - text: Создать турнир
+      - generic [ref=e70]: У вас пока нет турниров. Создайте первый — это займёт пару минут.
+  - generic [ref=e72]:
+    - generic [ref=e73]:
+      - generic [ref=e74]:
+        - generic [ref=e75]:
+          - img [ref=e77]
+          - generic [ref=e84]: AI-помощник BOXR
+        - generic [ref=e86]: ЗНАЕТ ПРАВИЛА IBA · ОТВЕЧАЕТ НА РУССКОМ
+      - button [ref=e88] [cursor=pointer]:
+        - img [ref=e89]
+    - generic [ref=e91]:
+      - button "Как провести жеребьёвку?" [ref=e92] [cursor=pointer]
+      - button "Что такое рассеивание в сетке?" [ref=e93] [cursor=pointer]
+      - button "Какие документы нужны от боксёра?" [ref=e94] [cursor=pointer]
+    - generic [ref=e96]:
+      - img [ref=e98]
+      - generic [ref=e106]: Привет! Я AI-помощник BOXR. Знаю правила IBA, могу помочь с жеребьёвкой, документами и любыми вопросами о приложении. Чем могу помочь?
+    - generic [ref=e107]:
+      - generic [ref=e108]:
+        - textbox "Спросите о правилах или приложении..." [ref=e109]
+        - button [disabled] [ref=e110]:
+          - img [ref=e111]
+      - generic [ref=e114]: ENTER — ОТПРАВИТЬ · SHIFT+ENTER — ПЕРЕНОС

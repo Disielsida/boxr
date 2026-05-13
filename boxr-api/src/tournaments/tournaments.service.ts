@@ -49,6 +49,12 @@ export class TournamentsService {
     });
   }
 
+  async listAll(): Promise<Tournament[]> {
+    return this.prisma.tournament.findMany({
+      orderBy: [{ dateStart: 'desc' }, { createdAt: 'desc' }],
+    });
+  }
+
   async listMine(
     organizerId: string,
     query: ListMineTournamentsDto,

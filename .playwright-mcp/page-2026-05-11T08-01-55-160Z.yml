@@ -1,0 +1,17 @@
+- generic [ref=e2]:
+  - generic [ref=e111]:
+    - banner [ref=e112]:
+      - generic [ref=e113]:
+        - generic [ref=e114]: СУДЬЯ
+        - heading "Здравствуйте, Дымовой Судья." [level=1] [ref=e115]
+        - paragraph [ref=e116]: smoke_judge@boxr.test
+      - button "Выйти" [ref=e117] [cursor=pointer]
+    - generic [ref=e118]:
+      - heading "Назначенные бои" [level=2] [ref=e119]
+      - generic [ref=e122]:
+        - generic [ref=e123]: Виктор Платонов vs Денис Куликов
+        - generic [ref=e124]: SMOKE PER-ROUND · 67 кг · Р1
+        - generic [ref=e125]: Завершён
+  - button "AI-помощник" [ref=e58] [cursor=pointer]:
+    - img [ref=e59]
+    - text: AI-помощник

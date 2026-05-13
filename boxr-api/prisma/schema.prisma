@@ -11,6 +11,7 @@ enum Role {
   ORGANIZER
   TRAINER
   JUDGE
+  ADMIN
 }
 
 enum TournamentType {

@@ -1,0 +1,18 @@
+- generic [ref=e2]:
+  - generic [ref=e49]:
+    - banner [ref=e50]:
+      - generic [ref=e51]:
+        - generic [ref=e52]: ДАШБОРД
+        - heading "Здравствуйте, Test." [level=1] [ref=e53]
+        - paragraph [ref=e54]: "Роль: Организатор · test-ai2@boxr.test"
+      - button "Выйти" [ref=e55] [cursor=pointer]
+    - generic [ref=e56]:
+      - generic [ref=e57]:
+        - heading "Мои турниры" [level=2] [ref=e58]
+        - button "Создать турнир" [ref=e59] [cursor=pointer]:
+          - img [ref=e60]
+          - text: Создать турнир
+      - generic [ref=e62]: У вас пока нет турниров. Создайте первый — это займёт пару минут.
+  - button "AI-помощник" [ref=e63] [cursor=pointer]:
+    - img [ref=e64]
+    - text: AI-помощник

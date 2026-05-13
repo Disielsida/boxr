@@ -15,6 +15,6 @@ export class RegisterDto {
   @MinLength(2)
   fullName!: string;
 
-  @IsEnum(Role, { message: 'Роль должна быть ORGANIZER, TRAINER или JUDGE' })
+  @IsEnum([Role.ORGANIZER, Role.TRAINER, Role.JUDGE], { message: 'Роль должна быть ORGANIZER, TRAINER или JUDGE' })
   role!: Role;
 }

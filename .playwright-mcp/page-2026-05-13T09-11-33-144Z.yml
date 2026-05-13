@@ -1,0 +1,95 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - navigation [ref=e4]:
+      - generic [ref=e5] [cursor=pointer]:
+        - img "BOXR" [ref=e6]
+        - generic [ref=e7]: BOXR
+      - generic [ref=e8]:
+        - button "Турниры" [ref=e9] [cursor=pointer]
+        - button "Возможности" [ref=e10] [cursor=pointer]
+        - button "О проекте" [ref=e11] [cursor=pointer]
+      - button "Авторизоваться" [ref=e13] [cursor=pointer]
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: ©ФЕДЕРАЦИЯ БОКСА РОССИИ
+        - heading "Турниры по боксу Б е з х а о с а ." [level=1] [ref=e18]:
+          - text: Турниры по боксу
+          - emphasis [ref=e19]:
+            - generic [ref=e20]: Б
+            - generic [ref=e21]: е
+            - generic [ref=e22]: з
+            - generic [ref=e24]: х
+            - generic [ref=e25]: а
+            - generic [ref=e26]: о
+            - generic [ref=e27]: с
+            - generic [ref=e28]: а
+            - generic [ref=e29]: .
+        - paragraph [ref=e30]: Единая платформа для организации официальных соревнований по боксу с AI-ассистентом.
+        - generic [ref=e31]:
+          - button "Войти в систему" [ref=e32] [cursor=pointer]
+          - button "Посмотреть турниры →" [ref=e33] [cursor=pointer]
+      - generic [ref=e34]:
+        - generic [ref=e35]: "2026"
+        - generic [ref=e36]:
+          - generic [ref=e37]:
+            - generic [ref=e38]: № 047 · БОКСЁР
+            - generic [ref=e39]: КМС
+          - generic [ref=e40]: АС
+          - generic [ref=e41]: Алексей Соколов
+          - generic [ref=e42]: БК «Динамо» · Москва
+          - generic [ref=e43]:
+            - generic [ref=e44]:
+              - generic [ref=e45]: ВЕС
+              - generic [ref=e46]: 75 кг
+            - generic [ref=e47]:
+              - generic [ref=e48]: КАТ.
+              - generic [ref=e49]: Средняя
+            - generic [ref=e50]:
+              - generic [ref=e51]: БОЁВ
+              - generic [ref=e52]: "23"
+    - generic [ref=e54]:
+      - generic [ref=e55]:
+        - generic [ref=e56]: "01."
+        - heading "Жеребьёвка за секунды" [level=3] [ref=e57]
+        - paragraph [ref=e58]: Сетка на 64 участника и полное расписание по рингам — одним кликом. Никаких таблиц, никаких ошибок.
+      - generic [ref=e59]:
+        - generic [ref=e60]: "02."
+        - heading "Паспорт — за 10 секунд" [level=3] [ref=e61]
+        - paragraph [ref=e62]: Сфотографируйте разворот паспорта — система сама распознает имя, дату рождения и все реквизиты. Ни одной опечатки.
+      - generic [ref=e63]:
+        - generic [ref=e64]: "03."
+        - heading "AI-эксперт у ринга" [level=3] [ref=e65]
+        - paragraph [ref=e66]: "Спорная ситуация — мгновенный ответ по правилам IBA. Нокдаун, дисквалификация, остановка боя: всё под рукой."
+    - generic [ref=e67]:
+      - generic [ref=e68]: КАК ЭТО РАБОТАЕТ
+      - heading "Сценарий" [level=2] [ref=e69]
+      - generic [ref=e70]:
+        - generic [ref=e71]: "01"
+        - generic [ref=e72]:
+          - heading "Создайте турнир" [level=3] [ref=e73]
+          - paragraph [ref=e74]: Категории, ринги, даты — пошаговый мастер за 5 минут. Всё, что нужно для официального соревнования, в одной форме.
+      - generic [ref=e75]:
+        - generic [ref=e76]: "02"
+        - generic [ref=e77]:
+          - heading "Зарегистрируйте участников" [level=3] [ref=e78]
+          - paragraph [ref=e79]: Тренеры подают заявки онлайн, паспорт сканируется автоматически. Организатор одобряет одним кликом — без бумаг и звонков.
+      - generic [ref=e80]:
+        - generic [ref=e81]: "03"
+        - generic [ref=e82]:
+          - heading "Проведите соревнования" [level=3] [ref=e83]
+          - paragraph [ref=e84]: Жеребьёвка, расписание по рингам, онлайн-судейство, итоговые протоколы. Всё — в одном месте, в реальном времени.
+    - generic [ref=e86]:
+      - blockquote [ref=e87]: «Ра-бо-та-ем!»
+      - img [ref=e88]
+      - generic [ref=e90]: Олег Владимирович Меньшиков, главный тренер БК «Торпедо»
+      - generic [ref=e92]: № 001
+    - generic [ref=e93]:
+      - generic [ref=e94]: НАЧАЛО ИСТОРИИ
+      - heading "Готовы провести идеальный турнир?" [level=2] [ref=e95]:
+        - text: Готовы провести
+        - emphasis [ref=e96]: идеальный турнир?
+      - button "Войти в систему" [ref=e98] [cursor=pointer]
+    - contentinfo [ref=e99]: © ПЛАТФОРМА ФЕДЕРАЦИИ БОКСА РОССИИ
+  - button "AI-помощник" [ref=e100] [cursor=pointer]:
+    - img [ref=e101]
+    - text: AI-помощник

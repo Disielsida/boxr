@@ -1,0 +1,46 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - generic [ref=e4]:
+      - button "Федерация бокса России BOXR" [ref=e5] [cursor=pointer]:
+        - img "Федерация бокса России" [ref=e6]
+        - generic [ref=e7]: BOXR
+      - generic [ref=e8]:
+        - generic [ref=e9]: ВХОД
+        - heading "С возвращением." [level=1] [ref=e10]
+        - paragraph [ref=e11]: Войдите в свой аккаунт
+        - generic [ref=e12]:
+          - generic [ref=e13]:
+            - generic [ref=e14]: Email
+            - textbox "ivan@example.com" [ref=e15]
+          - generic [ref=e16]:
+            - generic [ref=e17]: Пароль
+            - textbox "••••••••" [ref=e18]
+          - generic [ref=e19]:
+            - generic [ref=e20] [cursor=pointer]:
+              - checkbox "Запомнить меня" [ref=e21]
+              - text: Запомнить меня
+            - button "Забыли пароль?" [ref=e22] [cursor=pointer]
+          - button "Войти" [ref=e23] [cursor=pointer]
+          - generic [ref=e26]: ИЛИ
+          - button "Войти через Google" [ref=e28] [cursor=pointer]
+        - generic [ref=e29]:
+          - text: Нет аккаунта?
+          - button "Зарегистрироваться" [ref=e30] [cursor=pointer]
+    - generic [ref=e31]:
+      - generic [ref=e33]: № 001 / FILOSOFIA
+      - blockquote [ref=e34]: «Бокс — это не про силу. Это про систему.»
+      - generic [ref=e35]: — Иван Петров, тренер БК «Динамо»
+      - generic [ref=e36]: № 047
+      - generic [ref=e38]:
+        - generic [ref=e39]:
+          - generic [ref=e40]: "47"
+          - generic [ref=e41]: ТУРНИРОВ
+        - generic [ref=e42]:
+          - generic [ref=e43]: "2340"
+          - generic [ref=e44]: УЧАСТНИКОВ
+        - generic [ref=e45]:
+          - generic [ref=e46]: "12"
+          - generic [ref=e47]: РЕГИОНОВ
+  - button "AI-помощник" [ref=e48] [cursor=pointer]:
+    - img [ref=e49]
+    - text: AI-помощник

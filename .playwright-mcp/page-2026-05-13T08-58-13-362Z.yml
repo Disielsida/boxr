@@ -1,0 +1,67 @@
+- generic [ref=e2]:
+  - generic [ref=e3]:
+    - button "← Все турниры" [ref=e4] [cursor=pointer]
+    - generic [ref=e5]: Региональный · Любители
+    - heading "Кубок Санкт-Петербурга" [level=1] [ref=e6]
+    - generic [ref=e7]:
+      - generic [ref=e8]: 11–17 май 2026 · Санкт-Петербург · Васильевский остров, стр. 2
+      - generic [ref=e9]: Завершён
+    - generic [ref=e10]:
+      - button "Сетка" [active] [ref=e11] [cursor=pointer]
+      - button "Расписание" [ref=e12] [cursor=pointer]
+      - button "Результаты" [ref=e13] [cursor=pointer]
+    - generic [ref=e270]:
+      - generic [ref=e271]:
+        - generic [ref=e272]:
+          - button "←" [disabled] [ref=e273]
+          - generic [ref=e274]:
+            - generic [ref=e275]: 54 кг
+            - generic [ref=e276]: 1 / 10
+          - button "→" [ref=e277] [cursor=pointer]
+        - generic [ref=e278]:
+          - button "54 кг" [ref=e279] [cursor=pointer]
+          - button "57 кг" [ref=e280] [cursor=pointer]
+          - button "60 кг" [ref=e281] [cursor=pointer]
+          - button "63.5 кг" [ref=e282] [cursor=pointer]
+          - button "67 кг" [ref=e283] [cursor=pointer]
+          - button "71 кг" [ref=e284] [cursor=pointer]
+          - button "75 кг" [ref=e285] [cursor=pointer]
+          - button "80 кг" [ref=e286] [cursor=pointer]
+          - button "86 кг" [ref=e287] [cursor=pointer]
+          - button "92 кг" [ref=e288] [cursor=pointer]
+      - generic [ref=e289]:
+        - generic [ref=e290]:
+          - generic [ref=e292]: 54 кг
+          - generic [ref=e293]: 2 матчей в 1-м раунде
+        - generic [ref=e294]:
+          - generic [ref=e295]:
+            - generic [ref=e296]: 1/2
+            - button "🔴 Тихонов Роман Алексеевич 🔵 Куликов Станислав Андреевич KO · Р2" [disabled] [ref=e298]:
+              - generic [ref=e299]:
+                - generic [ref=e300]: 🔴
+                - generic [ref=e301]: Тихонов Роман Алексеевич
+              - generic [ref=e302]:
+                - generic [ref=e303]: 🔵
+                - generic [ref=e304]: Куликов Станислав Андреевич
+              - generic [ref=e305]: KO · Р2
+            - button "🔴 Ковалёва Анна Сергеевна 🔵 BYE WO" [disabled] [ref=e307]:
+              - generic [ref=e308]:
+                - generic [ref=e309]: 🔴
+                - generic [ref=e310]: Ковалёва Анна Сергеевна
+              - generic [ref=e311]:
+                - generic [ref=e312]: 🔵
+                - emphasis [ref=e314]: BYE
+              - generic [ref=e315]: WO
+          - generic [ref=e316]:
+            - generic [ref=e317]: Финал
+            - button "🔴 Ковалёва Анна Сергеевна 🔵 Куликов Станислав Андреевич WP · Р3" [disabled] [ref=e319]:
+              - generic [ref=e320]:
+                - generic [ref=e321]: 🔴
+                - generic [ref=e322]: Ковалёва Анна Сергеевна
+              - generic [ref=e323]:
+                - generic [ref=e324]: 🔵
+                - generic [ref=e325]: Куликов Станислав Андреевич
+              - generic [ref=e326]: WP · Р3
+  - button "AI-помощник" [ref=e262] [cursor=pointer]:
+    - img [ref=e263]
+    - text: AI-помощник

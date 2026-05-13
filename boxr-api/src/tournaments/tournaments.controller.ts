@@ -41,6 +41,13 @@ export class TournamentsController {
   }
 
   @UseGuards(JwtAuthGuard, RolesGuard)
+  @Roles(Role.ADMIN)
+  @Get('admin/all')
+  listAll() {
+    return this.service.listAll();
+  }
+
+  @UseGuards(JwtAuthGuard, RolesGuard)
   @Roles(Role.ORGANIZER)
   @Get('mine')
   listMine(

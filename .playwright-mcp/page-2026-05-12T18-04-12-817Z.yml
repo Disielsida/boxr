@@ -1,0 +1,40 @@
+- generic [ref=e3]:
+  - generic [ref=e5]:
+    - button "BOXR BOXR" [ref=e6] [cursor=pointer]:
+      - img "BOXR" [ref=e7]
+      - generic [ref=e8]: BOXR
+    - generic [ref=e9]: ЛОГИН
+    - heading "С возвращением." [level=1] [ref=e10]
+    - paragraph [ref=e11]:
+      - generic [ref=e12]: Войдите в свой аккаунт
+    - generic [ref=e13]:
+      - generic [ref=e14]:
+        - generic [ref=e15]: Email
+        - textbox "ivan@example.com" [ref=e16]
+      - generic [ref=e17]:
+        - generic [ref=e18]: Пароль
+        - textbox "••••••••" [ref=e19]
+      - generic [ref=e20]:
+        - generic [ref=e21] [cursor=pointer]:
+          - checkbox "Запомнить меня" [ref=e22]
+          - text: Запомнить меня
+        - button "Забыли пароль?" [ref=e23] [cursor=pointer]
+      - button "Войти" [ref=e24] [cursor=pointer]
+    - generic [ref=e25]:
+      - text: Нет аккаунта?
+      - button "Зарегистрироваться" [ref=e26] [cursor=pointer]
+  - generic [ref=e27]:
+    - generic [ref=e29]: ФИЛОСОФИЯ БОКСА
+    - blockquote [ref=e30]: «Чтобы стать боксером — нужно научиться терпеть.»
+    - generic [ref=e31]: — Олег Владимирович Меньшиков, главный тренер БК «Торпедо»
+    - generic [ref=e32]: № 002
+    - generic [ref=e34]:
+      - generic [ref=e35]:
+        - generic [ref=e36]: "47"
+        - generic [ref=e37]: ТУРНИРОВ
+      - generic [ref=e38]:
+        - generic [ref=e39]: "2340"
+        - generic [ref=e40]: УЧАСТНИКОВ
+      - generic [ref=e41]:
+        - generic [ref=e42]: "78"
+        - generic [ref=e43]: РЕГИОНОВ
