@@ -59,6 +59,7 @@ export const AppShell = ({ children }: Props) => {
             <button className={s.backBtn} onClick={() => navigate(-1)}>←</button>
           )}
           <img src="/logo.svg" alt="BOXR" style={{ height: 22 }} />
+          <span className={s.logo}>BOXR</span>
         </div>
         <div className={s.headerRight}>
           <span className={s.roleBadge}>{role.toUpperCase()}</span>
