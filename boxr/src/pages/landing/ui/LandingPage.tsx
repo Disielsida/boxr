@@ -232,12 +232,10 @@ export const LandingPage = () => {
             </p>
 
             <div
+              className={s.heroCta}
               style={{
                 ...animBase,
                 transform: loaded ? 'none' : 'translateY(12px)',
-                display: 'flex',
-                gap: 16,
-                alignItems: 'center',
                 transitionDelay: '0.45s',
               }}
             >
@@ -468,6 +466,7 @@ export const LandingPage = () => {
                   fontSize: 'var(--text-2xl)',
                   fontWeight: 700,
                   letterSpacing: '-0.02em',
+                  lineHeight: 1.1,
                   marginBottom: 12,
                 }}
               >

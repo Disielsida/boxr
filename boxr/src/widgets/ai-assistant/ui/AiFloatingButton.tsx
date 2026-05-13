@@ -1,10 +1,13 @@
 import { useEffect, useState } from 'react';
 
+import { useMediaQuery } from '@/shared/lib/useMediaQuery';
+
 interface Props {
   onClick: () => void;
 }
 
 export const AiFloatingButton = ({ onClick }: Props) => {
+  const isMobile = useMediaQuery('(max-width: 768px)');
   const [hovered, setHovered] = useState(false);
   const [bottomOffset, setBottomOffset] = useState(32);
 
@@ -56,11 +59,12 @@ export const AiFloatingButton = ({ onClick }: Props) => {
       onMouseLeave={() => setHovered(false)}
       style={{
         position: 'fixed',
-        bottom: bottomOffset,
-        right: 32,
+        bottom: isMobile ? 16 : bottomOffset,
+        right: isMobile ? 16 : 32,
         zIndex: 400,
-        height: 48,
-        padding: '0 20px',
+        height: isMobile ? 40 : 48,
+        width: isMobile ? 40 : 'auto',
+        padding: isMobile ? '0' : '0 20px',
         background: hovered ? 'var(--ring-700)' : 'var(--ink-900)',
         color: 'var(--paper-100)',
         border: 'none',
@@ -68,6 +72,7 @@ export const AiFloatingButton = ({ onClick }: Props) => {
         cursor: 'pointer',
         display: 'flex',
         alignItems: 'center',
+        justifyContent: 'center',
         gap: 10,
         fontFamily: 'var(--font-body)',
         fontSize: 'var(--text-sm)',
@@ -80,7 +85,7 @@ export const AiFloatingButton = ({ onClick }: Props) => {
       <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
         <path d="M12 8V4H8" /><rect x="8" y="2" width="8" height="4" rx="1" /><path d="M3 10a1 1 0 0 1 1-1h16a1 1 0 0 1 1 1v6a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1v-6z" /><circle cx="8.5" cy="13" r="1" /><circle cx="15.5" cy="13" r="1" /><path d="M8 17v1a2 2 0 0 0 4 0" />
       </svg>
-      AI-помощник
+      {!isMobile && 'AI-помощник'}
     </button>
   );
 };

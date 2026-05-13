@@ -45,9 +45,10 @@ export const JudgeDashboardPage = () => {
             <h1
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(36px, 4vw, 56px)',
+                fontSize: 'clamp(28px, 4vw, 56px)',
                 fontWeight: 700,
                 letterSpacing: '-0.03em',
+                lineHeight: 1.05,
                 marginBottom: 8,
               }}
             >
@@ -57,7 +58,7 @@ export const JudgeDashboardPage = () => {
               {user?.fullName} · {user?.email}
             </p>
           </div>
-          <Button variant="ghost" onClick={handleLogout} style={{ alignSelf: 'flex-start' }}>Выйти</Button>
+          <Button variant="ghost" onClick={handleLogout}>Выйти</Button>
         </header>
 
         <section>

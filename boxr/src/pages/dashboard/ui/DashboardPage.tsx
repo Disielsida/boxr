@@ -71,9 +71,10 @@ export const DashboardPage = () => {
             <h1
               style={{
                 fontFamily: 'var(--font-display)',
-                fontSize: 'clamp(36px, 4vw, 56px)',
+                fontSize: 'clamp(28px, 4vw, 56px)',
                 fontWeight: 700,
                 letterSpacing: '-0.03em',
+                lineHeight: 1.05,
                 marginBottom: 8,
               }}
             >
@@ -83,19 +84,12 @@ export const DashboardPage = () => {
               {user?.fullName} · {user?.email}
             </p>
           </div>
-          <Button variant="ghost" onClick={handleLogout} style={{ alignSelf: 'flex-start' }}>Выйти</Button>
+          <Button variant="ghost" onClick={handleLogout}>Выйти</Button>
         </header>
 
         {isOrganizer && (
           <section>
-            <div
-              style={{
-                display: 'flex',
-                justifyContent: 'space-between',
-                alignItems: 'center',
-                marginBottom: 24,
-              }}
-            >
+            <div className={s.sectionHeader}>
               <h2
                 style={{
                   fontFamily: 'var(--font-display)',
