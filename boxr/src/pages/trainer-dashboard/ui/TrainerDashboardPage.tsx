@@ -77,7 +77,7 @@ export const TrainerDashboardPage = () => {
       <div className={s.inner}>
         <header className={s.pageHeader}>
           <div>
-            <MonoLabel style={{ marginBottom: 0, fontSize: '0.8rem' }}>ДАШБОРД</MonoLabel>
+            <MonoLabel style={{ marginBottom: 5, fontSize: '0.8rem' }}>ДАШБОРД</MonoLabel>
             <h1
               style={{
                 fontFamily: 'var(--font-display)',
