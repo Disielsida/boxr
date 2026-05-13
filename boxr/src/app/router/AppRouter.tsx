@@ -2,7 +2,6 @@
 import { useState } from 'react';
 import { BrowserRouter, Route, Routes, useLocation } from 'react-router-dom';
 
-import { useAuthContext } from '@/app/providers';
 import { BoxerProfilePage } from '@/pages/boxer-profile';
 import { CreateTournamentPage } from '@/pages/create-tournament';
 import { DashboardPage } from '@/pages/dashboard';
@@ -24,7 +23,6 @@ import { AppShell } from '@/widgets/app-shell';
 import { RedirectIfAuth, RequireAuth, RequireRole } from './guards';
 
 const AiOverlay = () => {
-  const { user } = useAuthContext();
   const [aiOpen, setAiOpen] = useState(false);
   const { pathname } = useLocation();
 
