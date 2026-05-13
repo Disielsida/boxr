@@ -260,8 +260,8 @@
   .heroInner {
     flex-direction: column;
     gap: 32px;
-    text-align: center;
-    align-items: center;
+    text-align: left;
+    align-items: flex-start;
   }
   .heroContent { flex: none; width: 100%; }
   .heroIllustration { display: none; }
@@ -285,7 +285,7 @@
 
   .heroCta {
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
   }
 
   .footer {
