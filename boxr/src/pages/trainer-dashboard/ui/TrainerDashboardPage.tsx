@@ -94,7 +94,7 @@ export const TrainerDashboardPage = () => {
               {user?.fullName} · {user?.email}
             </p>
           </div>
-          <Button variant="ghost" onClick={handleLogout}>Выйти</Button>
+          <Button variant="ghost" onClick={handleLogout} style={{ alignSelf: 'flex-start', paddingLeft: 0 }}>Выйти</Button>
         </header>
 
         {error && <div style={{ color: 'var(--danger)', marginBottom: 24 }}>{error}</div>}
