@@ -1,0 +1,124 @@
+<h2>Как печатать жеребьёвку?</h2>
+<p class="subtitle">Жеребьёвка — это дерево матчей. На бумаге два варианта оформления.</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="A" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:white;border:1px solid #ccc;border-radius:4px;overflow:hidden;font-family:Arial,sans-serif;font-size:9px">
+        <div style="background:#111;color:white;padding:8px 12px">
+          <div style="font-size:12px;font-weight:700">КУБОК МОСКВЫ — 2025</div>
+          <div style="font-size:8px;margin-top:2px;opacity:0.6;letter-spacing:0.06em">ЖЕРЕБЬЁВКА · 60 КГ</div>
+        </div>
+        <div style="padding:10px 12px;display:flex;gap:16px;align-items:flex-start">
+          <!-- Round 1 -->
+          <div style="display:flex;flex-direction:column;gap:8px;min-width:90px">
+            <div style="font-size:7px;font-weight:700;letter-spacing:0.08em;color:#888;margin-bottom:2px">1/4 ФИНАЛА</div>
+            <div style="border:1px solid #ddd;border-radius:3px;overflow:hidden">
+              <div style="padding:3px 6px;background:#fee;font-size:8px">Иванов И.И.</div>
+              <div style="height:1px;background:#ddd"></div>
+              <div style="padding:3px 6px;font-size:8px">Петров П.П.</div>
+            </div>
+            <div style="border:1px solid #ddd;border-radius:3px;overflow:hidden">
+              <div style="padding:3px 6px;background:#e8f0fe;font-size:8px">Сидоров С.С.</div>
+              <div style="height:1px;background:#ddd"></div>
+              <div style="padding:3px 6px;font-size:8px">Кузнецов К.К.</div>
+            </div>
+            <div style="border:1px solid #ddd;border-radius:3px;overflow:hidden">
+              <div style="padding:3px 6px;font-size:8px">Морозов А.В.</div>
+              <div style="height:1px;background:#ddd"></div>
+              <div style="padding:3px 6px;font-size:8px">Новиков Д.С.</div>
+            </div>
+            <div style="border:1px solid #ddd;border-radius:3px;overflow:hidden">
+              <div style="padding:3px 6px;font-size:8px">Фёдоров В.П.</div>
+              <div style="height:1px;background:#ddd"></div>
+              <div style="padding:3px 6px;font-size:8px">Егоров Р.М.</div>
+            </div>
+          </div>
+          <!-- Round 2 -->
+          <div style="display:flex;flex-direction:column;justify-content:space-around;min-width:90px;margin-top:18px">
+            <div style="font-size:7px;font-weight:700;letter-spacing:0.08em;color:#888;margin-bottom:6px">ПОЛУФИНАЛ</div>
+            <div style="border:1px solid #ddd;border-radius:3px;overflow:hidden;margin-bottom:16px">
+              <div style="padding:3px 6px;font-size:8px;color:#aaa;font-style:italic">Победитель 1/4</div>
+              <div style="height:1px;background:#ddd"></div>
+              <div style="padding:3px 6px;font-size:8px;color:#aaa;font-style:italic">Победитель 1/4</div>
+            </div>
+            <div style="border:1px solid #ddd;border-radius:3px;overflow:hidden">
+              <div style="padding:3px 6px;font-size:8px;color:#aaa;font-style:italic">Победитель 1/4</div>
+              <div style="height:1px;background:#ddd"></div>
+              <div style="padding:3px 6px;font-size:8px;color:#aaa;font-style:italic">Победитель 1/4</div>
+            </div>
+          </div>
+          <!-- Final -->
+          <div style="display:flex;flex-direction:column;justify-content:center;min-width:90px;margin-top:44px">
+            <div style="font-size:7px;font-weight:700;letter-spacing:0.08em;color:#888;margin-bottom:6px">ФИНАЛ</div>
+            <div style="border:2px solid #111;border-radius:3px;overflow:hidden">
+              <div style="padding:3px 6px;font-size:8px;color:#aaa;font-style:italic">Победитель</div>
+              <div style="height:1px;background:#ddd"></div>
+              <div style="padding:3px 6px;font-size:8px;color:#aaa;font-style:italic">Победитель</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Визуальное дерево (по категории)</h3>
+      <p>Каждая категория — отдельная страница с горизонтальным деревом раундов. Как в UI, но для печати. Лучше читается как жеребьёвка.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="B" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="background:white;border:1px solid #ccc;border-radius:4px;overflow:hidden;font-family:Arial,sans-serif;font-size:9px">
+        <div style="background:#111;color:white;padding:8px 12px">
+          <div style="font-size:12px;font-weight:700">КУБОК МОСКВЫ — 2025</div>
+          <div style="font-size:8px;margin-top:2px;opacity:0.6;letter-spacing:0.06em">ЖЕРЕБЬЁВКА · ВСЕ КАТЕГОРИИ</div>
+        </div>
+        <div style="padding:10px 12px">
+          <div style="font-size:8px;font-weight:700;letter-spacing:0.08em;color:#888;margin-bottom:4px">60 КГ</div>
+          <table style="width:100%;border-collapse:collapse;font-size:8px;margin-bottom:8px">
+            <thead>
+              <tr style="background:#f0efe9">
+                <th style="padding:3px 4px;text-align:left;font-size:7px;letter-spacing:0.05em">РАУНД</th>
+                <th style="padding:3px 4px;text-align:left;font-size:7px;letter-spacing:0.05em">КРАСНЫЙ</th>
+                <th style="padding:3px 4px;text-align:left;font-size:7px;letter-spacing:0.05em">СИНИЙ</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr style="border-bottom:1px solid #eee">
+                <td style="padding:3px 4px;color:#666">1/4</td>
+                <td style="padding:3px 4px">Иванов И.И.</td>
+                <td style="padding:3px 4px">Петров П.П.</td>
+              </tr>
+              <tr style="border-bottom:1px solid #eee">
+                <td style="padding:3px 4px;color:#666">1/4</td>
+                <td style="padding:3px 4px">Сидоров С.С.</td>
+                <td style="padding:3px 4px">Кузнецов К.К.</td>
+              </tr>
+              <tr style="border-bottom:1px solid #eee">
+                <td style="padding:3px 4px;color:#666">1/2</td>
+                <td style="padding:3px 4px;color:#aaa;font-style:italic">TBD</td>
+                <td style="padding:3px 4px;color:#aaa;font-style:italic">TBD</td>
+              </tr>
+            </tbody>
+          </table>
+          <div style="font-size:8px;font-weight:700;letter-spacing:0.08em;color:#888;margin-bottom:4px">75 КГ</div>
+          <table style="width:100%;border-collapse:collapse;font-size:8px">
+            <tbody>
+              <tr style="border-bottom:1px solid #eee">
+                <td style="padding:3px 4px;color:#666">1/4</td>
+                <td style="padding:3px 4px">Морозов А.В.</td>
+                <td style="padding:3px 4px">Новиков Д.С.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Таблица всех матчей</h3>
+      <p>Все категории на одном листе — простая таблица: раунд, красный угол, синий угол. Компактно, умещается больше категорий.</p>
+    </div>
+  </div>
+
+</div>

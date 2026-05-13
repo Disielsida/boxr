@@ -1,0 +1,104 @@
+.root {
+  min-height: 100vh;
+  background: white;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 11px;
+  color: #111;
+}
+
+.noPrint {
+  display: flex;
+  gap: 10px;
+  padding: 12px 20px;
+  background: #f5f4f0;
+  border-bottom: 1px solid #ddd;
+}
+
+.header {
+  background: #1a1a1a;
+  color: white;
+  padding: 14px 24px;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.tournamentName {
+  font-size: 18px;
+  font-weight: 700;
+  letter-spacing: -0.02em;
+  margin-bottom: 3px;
+}
+
+.meta {
+  font-size: 9px;
+  opacity: 0.55;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+.docTitle {
+  font-size: 9px;
+  opacity: 0.5;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+}
+
+.body {
+  padding: 20px 24px;
+}
+
+.footer {
+  margin-top: 24px;
+  padding-top: 12px;
+  border-top: 1px solid #ddd;
+  display: flex;
+  justify-content: space-between;
+  font-size: 8px;
+  color: #aaa;
+}
+
+.loading {
+  padding: 60px;
+  text-align: center;
+  font-family: monospace;
+  color: #888;
+  letter-spacing: 0.1em;
+}
+
+.error {
+  padding: 40px;
+  text-align: center;
+  color: #c00;
+}
+
+.button {
+  cursor: pointer;
+  padding: 4px 12px;
+  border: 1px solid #ccc;
+  background: white;
+  font-size: 11px;
+}
+
+.button:hover {
+  background: #f5f4f0;
+}
+
+.button:focus-visible {
+  outline: 2px solid #111;
+  outline-offset: 2px;
+}
+
+@media print {
+  .noPrint {
+    display: none !important;
+  }
+  .root {
+    font-size: 10px;
+  }
+}
+
+@page {
+  size: A4 portrait;
+  margin: 15mm;
+}

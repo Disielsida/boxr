@@ -1,0 +1,39 @@
+.wizardHeader {
+  height: 64px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 40px;
+  border-bottom: 1px solid var(--paper-300);
+  position: sticky;
+  top: 0;
+  background: var(--paper-100);
+  z-index: 5;
+}
+
+.body {
+  flex: 1;
+  padding: 40px;
+  max-width: 640px;
+  margin: 0 auto;
+  width: 100%;
+}
+
+@media (max-width: 1024px) {
+  .wizardHeader {
+    padding: 0 24px;
+  }
+  .body {
+    padding: 32px 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .wizardHeader {
+    padding: 0 12px;
+    height: 56px;
+  }
+  .body {
+    padding: 20px 12px;
+  }
+}

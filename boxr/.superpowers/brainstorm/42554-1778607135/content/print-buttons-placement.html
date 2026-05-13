@@ -1,0 +1,51 @@
+<h2>Где располагаются кнопки «Распечатать»?</h2>
+<p class="subtitle">Выбери, как кнопки печати появляются в интерфейсе управления турниром</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="A" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-family:monospace;font-size:11px;background:#f5f4f0;border:1px solid #ddd;border-radius:6px;overflow:hidden">
+        <div style="background:#1a1a1a;color:#f5f4f0;padding:8px 16px;font-size:10px;letter-spacing:0.1em">КУБОК МОСКВЫ · В ХОДЕ</div>
+        <div style="display:flex;border-bottom:1px solid #ddd">
+          <span style="padding:8px 14px;border-bottom:2px solid #1a1a1a;font-size:10px">Жеребьёвка</span>
+          <span style="padding:8px 14px;color:#888;font-size:10px">Расписание</span>
+          <span style="padding:8px 14px;color:#888;font-size:10px">Результаты</span>
+        </div>
+        <div style="padding:10px 14px;display:flex;justify-content:flex-end;gap:6px;border-bottom:1px solid #eee;background:#fafaf8">
+          <button style="padding:4px 10px;border:1px solid #ccc;border-radius:4px;background:white;font-size:9px;cursor:pointer">🖨 Жеребьёвку</button>
+        </div>
+        <div style="padding:10px 14px;font-size:10px;color:#888">[содержимое вкладки]</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Кнопка в каждой вкладке</h3>
+      <p>В шапке каждой вкладки (Жеребьёвка / Расписание / Результаты) есть своя кнопка «Распечатать». Видна только когда есть что печатать.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="B" onclick="toggleSelect(this)">
+    <div class="card-image">
+      <div style="font-family:monospace;font-size:11px;background:#f5f4f0;border:1px solid #ddd;border-radius:6px;overflow:hidden">
+        <div style="background:#1a1a1a;color:#f5f4f0;padding:8px 16px;font-size:10px;letter-spacing:0.1em">КУБОК МОСКВЫ · В ХОДЕ</div>
+        <div style="display:flex;border-bottom:1px solid #ddd">
+          <span style="padding:8px 14px;border-bottom:2px solid #1a1a1a;font-size:10px">Информация</span>
+          <span style="padding:8px 14px;color:#888;font-size:10px">Жеребьёвка</span>
+          <span style="padding:8px 14px;color:#888;font-size:10px">Расписание</span>
+          <span style="padding:8px 14px;color:#888;font-size:10px">Результаты</span>
+          <span style="padding:8px 14px;color:#888;font-size:10px;font-weight:bold">🖨 Печать</span>
+        </div>
+        <div style="padding:14px;background:#fafaf8;display:flex;gap:8px;flex-wrap:wrap">
+          <button style="padding:6px 12px;border:1px solid #ccc;border-radius:4px;background:white;font-size:9px">📋 Расписание</button>
+          <button style="padding:6px 12px;border:1px solid #ccc;border-radius:4px;background:white;font-size:9px">🥊 Жеребьёвка</button>
+          <button style="padding:6px 12px;border:1px solid #ccc;border-radius:4px;background:white;font-size:9px">🏆 Результаты</button>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Отдельная вкладка «Печать»</h3>
+      <p>Отдельная вкладка с тремя кнопками — по одной на каждый документ. Всё в одном месте, не нужно переключать вкладки.</p>
+    </div>
+  </div>
+
+</div>

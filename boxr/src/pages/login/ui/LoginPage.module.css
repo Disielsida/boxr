@@ -1,0 +1,45 @@
+.root {
+  display: flex;
+  min-height: 100vh;
+}
+
+.left {
+  flex: 0 0 50%;
+  padding: 48px 64px;
+  display: flex;
+  flex-direction: column;
+}
+
+.right {
+  flex: 0 0 50%;
+  padding: 64px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+  overflow: hidden;
+}
+
+@media (max-width: 1024px) {
+  .left {
+    flex: 0 0 55%;
+    padding: 40px 48px;
+  }
+
+  .right {
+    flex: 0 0 45%;
+    padding: 48px 40px;
+  }
+}
+
+@media (max-width: 768px) {
+  .right {
+    display: none;
+  }
+
+  .left {
+    flex: 1;
+    padding: 32px 20px;
+    align-items: stretch;
+  }
+}

@@ -1,0 +1,9 @@
+-- AlterTable
+ALTER TABLE "Match" ADD COLUMN     "ring" INTEGER,
+ADD COLUMN     "scheduledAt" TIMESTAMP(3);
+
+-- AlterTable
+ALTER TABLE "Tournament" ADD COLUMN     "dayStartTime" TEXT NOT NULL DEFAULT '10:00',
+ADD COLUMN     "minRestMinutes" INTEGER NOT NULL DEFAULT 60,
+ADD COLUMN     "ringCount" INTEGER NOT NULL DEFAULT 1,
+ADD COLUMN     "slotMinutes" INTEGER NOT NULL DEFAULT 30;

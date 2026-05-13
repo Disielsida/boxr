@@ -1,0 +1,85 @@
+.page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 32px;
+}
+
+.backBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  color: var(--ink-500);
+  padding: 0 0 24px;
+  transition: color 0.15s;
+}
+
+.backBtn:hover {
+  color: var(--ink-900);
+}
+
+.tabs {
+  display: flex;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-top: 0;
+}
+
+.tabBtn {
+  height: 36px;
+  padding: 0 20px;
+  border-radius: 999px;
+  border: 1px solid var(--paper-300);
+  background: transparent;
+  color: var(--ink-500);
+  font-family: var(--font-body);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s, color 0.15s, border-color 0.15s;
+  white-space: nowrap;
+}
+
+.tabBtn:hover {
+  border-color: var(--ink-300);
+  color: var(--ink-700);
+}
+
+.tabBtnActive {
+  background: var(--ink-900);
+  color: var(--paper-100);
+  border-color: var(--ink-900);
+}
+
+.tabBtnActive:hover {
+  background: var(--ink-900);
+  color: var(--paper-100);
+  border-color: var(--ink-900);
+}
+
+@media (max-width: 1024px) {
+  .page {
+    padding: 24px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page {
+    padding: 16px 12px;
+  }
+
+  .tabs {
+    overflow-x: auto;
+    -webkit-overflow-scrolling: touch;
+    scrollbar-width: none;
+    flex-wrap: nowrap;
+  }
+
+  .tabs::-webkit-scrollbar {
+    display: none;
+  }
+}

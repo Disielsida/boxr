@@ -1,0 +1,88 @@
+<h2>AppShell — мобильный хедер и drawer</h2>
+<p class="subtitle">Компонент-обёртка для всех защищённых роутов. На десктопе (&gt;1024px) прозрачен — рендерит children как есть.</p>
+
+<div class="split" style="gap:24px;margin-top:16px;">
+
+  <!-- Закрытый drawer -->
+  <div class="mockup">
+    <div class="mockup-header">Хедер (drawer закрыт)</div>
+    <div class="mockup-body" style="padding:0;background:#f0f4f9;">
+      <!-- Header bar -->
+      <div style="background:#1a143d;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;font-family:sans-serif;">
+        <div style="display:flex;align-items:center;gap:10px;">
+          <!-- Back button (показывается не на root-страницах) -->
+          <div style="color:#7a8fa8;font-size:18px;cursor:pointer;">←</div>
+          <div style="color:#fff;font-weight:800;font-size:15px;letter-spacing:1px;">BOXR</div>
+        </div>
+        <div style="display:flex;align-items:center;gap:12px;">
+          <!-- Role badge -->
+          <div style="background:#252060;color:#a0b4d0;font-size:10px;padding:3px 8px;border-radius:999px;font-family:sans-serif;">ORGANIZER</div>
+          <!-- Hamburger -->
+          <div style="display:flex;flex-direction:column;gap:4px;cursor:pointer;padding:4px;">
+            <div style="width:20px;height:2px;background:#fff;border-radius:1px;"></div>
+            <div style="width:20px;height:2px;background:#fff;border-radius:1px;"></div>
+            <div style="width:20px;height:2px;background:#fff;border-radius:1px;"></div>
+          </div>
+        </div>
+      </div>
+      <!-- Page content below -->
+      <div style="padding:16px;font-family:sans-serif;font-size:12px;color:#4a5568;">
+        <div style="background:#fff;border-radius:8px;padding:12px;margin-bottom:8px;">Карточка турнира 1</div>
+        <div style="background:#fff;border-radius:8px;padding:12px;margin-bottom:8px;">Карточка турнира 2</div>
+        <div style="background:#fff;border-radius:8px;padding:12px;">Карточка турнира 3</div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Открытый drawer -->
+  <div class="mockup">
+    <div class="mockup-header">Drawer открыт (тап на ☰)</div>
+    <div class="mockup-body" style="padding:0;background:#f0f4f9;position:relative;overflow:hidden;">
+      <!-- Header bar -->
+      <div style="background:#1a143d;padding:12px 16px;display:flex;align-items:center;justify-content:space-between;font-family:sans-serif;position:relative;z-index:2;">
+        <div style="color:#fff;font-weight:800;font-size:15px;letter-spacing:1px;">BOXR</div>
+        <div style="color:#fff;font-size:20px;cursor:pointer;">✕</div>
+      </div>
+      <!-- Backdrop -->
+      <div style="position:absolute;inset:0;top:44px;background:rgba(13,12,29,0.6);z-index:1;"></div>
+      <!-- Drawer panel -->
+      <div style="position:absolute;top:44px;right:0;bottom:0;width:72%;background:#1a143d;z-index:2;padding:20px 16px;font-family:sans-serif;display:flex;flex-direction:column;gap:4px;">
+        <!-- User info -->
+        <div style="color:#7a8fa8;font-size:10px;margin-bottom:12px;padding-bottom:12px;border-bottom:1px solid #252060;">
+          <div style="color:#fff;font-size:13px;font-weight:600;margin-bottom:2px;">Иван Петров</div>
+          <div style="background:#252060;color:#a0b4d0;font-size:9px;padding:2px 6px;border-radius:999px;display:inline-block;">ORGANIZER</div>
+        </div>
+        <!-- Nav links -->
+        <div style="color:#e8eef8;font-size:13px;padding:10px 8px;border-radius:6px;background:#252060;margin-bottom:4px;display:flex;align-items:center;gap:10px;">
+          <span style="opacity:0.7;">🏆</span> Мои турниры
+        </div>
+        <div style="color:#a0b4d0;font-size:13px;padding:10px 8px;border-radius:6px;display:flex;align-items:center;gap:10px;">
+          <span style="opacity:0.7;">➕</span> Создать турнир
+        </div>
+        <!-- Spacer -->
+        <div style="flex:1;"></div>
+        <div style="color:#4a5568;font-size:13px;padding:10px 8px;border-radius:6px;display:flex;align-items:center;gap:10px;">
+          <span>🚪</span> Выйти
+        </div>
+      </div>
+      <!-- Dimmed page content -->
+      <div style="padding:16px;font-family:sans-serif;font-size:12px;color:#4a5568;filter:blur(1px);">
+        <div style="background:#fff;border-radius:8px;padding:12px;margin-bottom:8px;">Карточка турнира 1</div>
+        <div style="background:#fff;border-radius:8px;padding:12px;">Карточка турнира 2</div>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<div class="section" style="margin-top:20px;">
+  <h3>Поведение</h3>
+  <ul style="font-family:sans-serif;font-size:13px;color:#4a5568;line-height:2;padding-left:20px;">
+    <li>На <strong>десктопе (&gt;1024px)</strong> — хедер скрыт, AppShell прозрачен</li>
+    <li>На <strong>планшете/телефоне</strong> — хедер всегда виден, 48px высота</li>
+    <li><strong>Drawer</strong> выезжает справа (70% ширины), backdrop закрывает по тапу</li>
+    <li><strong>Навигация</strong> зависит от роли пользователя (organizer / trainer / judge)</li>
+    <li><strong>Активный роут</strong> подсвечивается в drawer</li>
+    <li>На страницах не в корне — показывается кнопка <strong>← назад</strong> в хедере</li>
+  </ul>
+</div>

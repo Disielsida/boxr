@@ -1,0 +1,220 @@
+generator client {
+  provider = "prisma-client-js"
+}
+
+datasource db {
+  provider = "postgresql"
+  url      = env("DATABASE_URL")
+}
+
+enum Role {
+  ORGANIZER
+  TRAINER
+  JUDGE
+}
+
+enum TournamentType {
+  REGIONAL
+  NATIONAL
+  INTERNATIONAL
+}
+
+enum TournamentLevel {
+  AMATEUR
+  PROFESSIONAL
+  MIXED
+}
+
+enum TournamentStatus {
+  DRAFT
+  PUBLISHED
+  IN_PROGRESS
+  FINISHED
+  CANCELLED
+}
+
+enum Gender {
+  MALE
+  FEMALE
+}
+
+enum BoxerRank {
+  NONE
+  THIRD_CLASS
+  SECOND_CLASS
+  FIRST_CLASS
+  CMS
+  MS
+  MSIC
+}
+
+enum ApplicationStatus {
+  PENDING
+  APPROVED
+  REJECTED
+  WITHDRAWN
+}
+
+enum MatchOutcome {
+  KO
+  WP
+  RSC
+  DSQ
+  WO
+}
+
+enum MatchSlot {
+  RED
+  BLUE
+}
+
+enum MatchStatus {
+  PENDING
+  READY
+  COMPLETED
+}
+
+model User {
+  id           String   @id @default(uuid())
+  email        String   @unique
+  passwordHash String
+  fullName     String
+  role         Role
+  createdAt    DateTime @default(now())
+  updatedAt    DateTime @updatedAt
+
+  refreshTokens RefreshToken[]
+  tournaments   Tournament[]
+  boxers                Boxer[]
+  applicationsAsTrainer Application[] @relation("trainerApplications")
+  judgeMatches  Match[]       @relation("judgeMatches")
+}
+
+model Tournament {
+  id            String           @id @default(uuid())
+  name          String
+  type          TournamentType
+  level         TournamentLevel
+  status        TournamentStatus @default(DRAFT)
+  dateStart     DateTime         @db.Date
+  dateEnd       DateTime         @db.Date
+  city          String
+  address       String?
+  categories    Float[]
+  rounds        Int
+  roundDuration Int
+  helmets       Boolean          @default(false)
+  organizerId   String
+  organizer     User             @relation(fields: [organizerId], references: [id], onDelete: Restrict)
+  createdAt     DateTime         @default(now())
+  updatedAt     DateTime         @updatedAt
+  publishedAt   DateTime?
+  ringCount       Int      @default(1)
+  dayStartTime    String   @default("10:00")
+  slotMinutes     Int      @default(30)
+  minRestMinutes  Int      @default(60)
+
+  applications Application[]
+  matches Match[]
+
+  @@index([status, dateStart])
+  @@index([organizerId])
+}
+
+model RefreshToken {
+  id         String    @id @default(uuid())
+  userId     String
+  user       User      @relation(fields: [userId], references: [id], onDelete: Cascade)
+  tokenHash  String    @unique
+  expiresAt  DateTime
+  revokedAt  DateTime?
+  userAgent  String?
+  ipAddress  String?
+  createdAt  DateTime  @default(now())
+
+  @@index([userId])
+  @@index([expiresAt])
+}
+
+model Boxer {
+  id        String    @id @default(uuid())
+  fullName  String
+  dob       DateTime  @db.Date
+  gender    Gender
+  weight    Float
+  club      String?
+  rank      BoxerRank @default(NONE)
+
+  passportSeries       String?
+  passportNumber       String?
+  passportIssuedBy     String?
+  passportIssuedAt     DateTime? @db.Date
+  passportDivisionCode String?
+
+  trainerId String
+  trainer   User      @relation(fields: [trainerId], references: [id], onDelete: Restrict)
+  createdAt DateTime  @default(now())
+  updatedAt DateTime  @updatedAt
+
+  applications Application[]
+  redMatches  Match[] @relation("redMatches")
+  blueMatches Match[] @relation("blueMatches")
+  wonMatches  Match[] @relation("wonMatches")
+
+  @@index([trainerId])
+}
+
+model Application {
+  id           String            @id @default(uuid())
+  boxerId      String
+  boxer        Boxer             @relation(fields: [boxerId], references: [id], onDelete: Cascade)
+  tournamentId String
+  tournament   Tournament        @relation(fields: [tournamentId], references: [id], onDelete: Cascade)
+  category     Float
+  status       ApplicationStatus @default(PENDING)
+  rejectReason String?
+  trainerId    String
+  trainer      User              @relation("trainerApplications", fields: [trainerId], references: [id], onDelete: Restrict)
+  createdAt    DateTime          @default(now())
+  updatedAt    DateTime          @updatedAt
+  decidedAt    DateTime?
+  withdrawnAt  DateTime?
+
+  @@unique([boxerId, tournamentId])
+  @@index([tournamentId, status])
+  @@index([trainerId])
+}
+
+model Match {
+  id            String        @id @default(uuid())
+  tournamentId  String
+  tournament    Tournament    @relation(fields: [tournamentId], references: [id], onDelete: Cascade)
+  category      Float
+  round         Int
+  position      Int
+  redBoxerId    String?
+  redBoxer      Boxer?        @relation("redMatches", fields: [redBoxerId], references: [id], onDelete: Restrict)
+  blueBoxerId   String?
+  blueBoxer     Boxer?        @relation("blueMatches", fields: [blueBoxerId], references: [id], onDelete: Restrict)
+  nextMatchId   String?
+  nextMatch     Match?        @relation("MatchProgression", fields: [nextMatchId], references: [id], onDelete: SetNull)
+  prevMatches   Match[]       @relation("MatchProgression")
+  nextSlot      MatchSlot?
+  status        MatchStatus   @default(PENDING)
+  winnerId      String?
+  winner        Boxer?        @relation("wonMatches", fields: [winnerId], references: [id], onDelete: Restrict)
+  outcome       MatchOutcome?
+  endRound      Int?
+  decidedAt     DateTime?
+  scheduledAt   DateTime?
+  ring          Int?
+  judgeId       String?
+  judge         User?         @relation("judgeMatches", fields: [judgeId], references: [id], onDelete: SetNull)
+  createdAt     DateTime      @default(now())
+  updatedAt     DateTime      @updatedAt
+
+  @@unique([tournamentId, category, round, position])
+  @@index([tournamentId, status])
+  @@index([nextMatchId])
+  @@index([judgeId])
+}

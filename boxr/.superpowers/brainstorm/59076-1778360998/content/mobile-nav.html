@@ -1,0 +1,76 @@
+<h2>Мобильная навигация — какой подход?</h2>
+<p class="subtitle">Сейчас в BOXR нет общего layout shell — каждая страница самостоятельна. На мобильных нужно выбрать паттерн навигации.</p>
+
+<div class="cards">
+
+  <div class="card" data-choice="A" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f8f9fc;padding:16px;">
+      <div style="background:#1a143d;color:#fff;padding:10px 14px;border-radius:8px 8px 0 0;display:flex;justify-content:space-between;align-items:center;font-family:sans-serif;font-size:14px;">
+        <span style="font-weight:700;letter-spacing:1px;">BOXR</span>
+        <span style="font-size:18px;cursor:pointer;">☰</span>
+      </div>
+      <div style="background:#1a143d;opacity:0.9;color:#fff;padding:12px 14px;font-family:sans-serif;font-size:13px;display:flex;flex-direction:column;gap:10px;border-radius:0 0 8px 8px;">
+        <span>📋 Мои турниры</span>
+        <span>➕ Создать турнир</span>
+        <span>🚪 Выйти</span>
+      </div>
+      <div style="background:#fff;margin-top:8px;border-radius:8px;padding:12px;font-family:sans-serif;font-size:12px;color:#555;">
+        <div style="font-weight:600;margin-bottom:6px;color:#1a143d;">Активные турниры</div>
+        <div style="background:#f0f4f9;border-radius:6px;padding:8px;margin-bottom:6px;">Чемпионат Москвы 2026</div>
+        <div style="background:#f0f4f9;border-radius:6px;padding:8px;">Кубок Юности</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>A — Шапка + выдвижное меню</h3>
+      <p>Создаём единый <code>AppShell</code> с топбаром (лого + гамбургер). По тапу — drawer-меню с навигацией. Нужно добавить layout wrapper.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="B" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f8f9fc;padding:16px;">
+      <div style="background:#fff;border-radius:8px;padding:12px;font-family:sans-serif;font-size:12px;color:#555;margin-bottom:8px;">
+        <div style="font-weight:600;margin-bottom:6px;color:#1a143d;">Активные турниры</div>
+        <div style="background:#f0f4f9;border-radius:6px;padding:8px;margin-bottom:6px;">Чемпионат Москвы 2026</div>
+        <div style="background:#f0f4f9;border-radius:6px;padding:8px;">Кубок Юности</div>
+      </div>
+      <div style="background:#1a143d;color:#fff;padding:10px;border-radius:8px;display:flex;justify-content:space-around;font-family:sans-serif;font-size:11px;text-align:center;">
+        <div style="display:flex;flex-direction:column;gap:3px;align-items:center;">
+          <span style="font-size:18px;">🏆</span><span>Турниры</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:3px;align-items:center;opacity:0.5;">
+          <span style="font-size:18px;">➕</span><span>Создать</span>
+        </div>
+        <div style="display:flex;flex-direction:column;gap:3px;align-items:center;opacity:0.5;">
+          <span style="font-size:18px;">👤</span><span>Профиль</span>
+        </div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>B — Нижняя навигация (Tab Bar)</h3>
+      <p>Фиксированный таббар внизу экрана — стандарт для мобильных приложений. Удобно для большого пальца. Нужен тот же layout wrapper.</p>
+    </div>
+  </div>
+
+  <div class="card" data-choice="C" onclick="toggleSelect(this)">
+    <div class="card-image" style="background:#f8f9fc;padding:16px;">
+      <div style="background:#fff;border-radius:8px;padding:12px;font-family:sans-serif;font-size:12px;color:#555;">
+        <div style="display:flex;align-items:center;gap:8px;margin-bottom:10px;padding-bottom:10px;border-bottom:1px solid #eee;">
+          <span style="font-size:16px;">←</span>
+          <span style="font-weight:600;color:#1a143d;">Чемпионат Москвы 2026</span>
+        </div>
+        <div style="background:#f0f4f9;border-radius:6px;padding:8px;margin-bottom:6px;">📋 Участники (12)</div>
+        <div style="background:#f0f4f9;border-radius:6px;padding:8px;margin-bottom:6px;">🥊 Сетка</div>
+        <div style="background:#f0f4f9;border-radius:6px;padding:8px;">📅 Расписание</div>
+      </div>
+    </div>
+    <div class="card-body">
+      <h3>C — Минимально: только inline навигация</h3>
+      <p>Не добавляем единый shell. Каждая страница сохраняет собственную навигацию (стрелки назад, вкладки). Меньше изменений, но навигация между разделами не унифицирована.</p>
+    </div>
+  </div>
+
+</div>
+
+<div class="section" style="margin-top:24px;">
+  <p class="subtitle" style="font-size:13px;">💡 Рекомендация: <strong>A (шапка + drawer)</strong> — больше места на экране для контента, работает одинаково хорошо для всех ролей, легко расширяется. Tab Bar (B) удобнее для частых переходов, но в BOXR разделов мало и они роль-зависимые.</p>
+</div>
