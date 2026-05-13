@@ -3,7 +3,7 @@ import { Link, useNavigate } from 'react-router-dom';
 
 import { useAuthContext } from '@/app/providers';
 import { ApiError, matchesApi } from '@/shared/api';
-import { Button, MonoLabel } from '@/shared/ui';
+import { MonoLabel } from '@/shared/ui';
 
 import s from './JudgeDashboardPage.module.css';
 
@@ -58,7 +58,7 @@ export const JudgeDashboardPage = () => {
               {user?.fullName} · {user?.email}
             </p>
           </div>
-          <Button variant="ghost" onClick={handleLogout} style={{ alignSelf: 'flex-start', paddingLeft: 0 }}>Выйти</Button>
+          <button className={s.logoutBtn} onClick={() => void handleLogout()}>Выйти</button>
         </header>
 
         <section>

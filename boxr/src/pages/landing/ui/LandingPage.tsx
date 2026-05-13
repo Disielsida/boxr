@@ -243,7 +243,7 @@ export const LandingPage = () => {
                 Войти в систему
               </button>
               <button onClick={() => navigate('/tournaments')} className={s.btnGhost}>
-                Посмотреть турниры →
+                Посмотреть турниры
               </button>
             </div>
           </div>

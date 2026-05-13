@@ -61,6 +61,25 @@
   margin-bottom: 24px;
 }
 
+.logoutBtn {
+  height: 40px;
+  padding: 0 20px;
+  background: transparent;
+  color: var(--ink-700);
+  border: none;
+  border-radius: var(--radius-sm);
+  font-family: var(--font-body);
+  font-size: var(--text-base);
+  font-weight: 500;
+  cursor: pointer;
+  transition: background 0.15s;
+  white-space: nowrap;
+  align-self: flex-start;
+}
+.logoutBtn:hover {
+  background: var(--paper-200);
+}
+
 .grid {
   display: grid;
   grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
@@ -98,6 +117,17 @@
     flex-direction: column;
     align-items: flex-start;
     gap: 12px;
+  }
+
+  .logoutBtn {
+    padding: 0;
+    background: none;
+    color: var(--ink-500);
+    font-size: var(--text-sm);
+  }
+  .logoutBtn:hover {
+    background: none;
+    color: var(--ink-900);
   }
 
   .grid {
